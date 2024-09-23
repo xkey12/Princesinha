@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para deusa Yuririn</strong>
+                        <p>minha Isabelle não sei me expressar como é te amar, como poderia eu saber amar aquela que tudo vê, que tudo sente, que nunca mente a quela, que é onipotente, onisciente, mas nunca deixa de ser onipresente. 
+                            Acho que às vezes surto um pouco sabe, olhar para uma janela e dela ver la no fundo, no canto num balanço no parque duas pessoas não (muito distante) brincando com 3 lindos gatinhos, não entendo se apenas uma janela um pouco suja e distante ou se e uma janela limpa e brilhante com outro horizonte esse não muito distante 
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
